@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"netcl/configs"
+	"netcl/internal/app/cmd"
 )
 
 var config = configs.GetRootConfig()
 
 func main() {
-	fmt.Println(config.Short)
+	cmd.Execute()
 }
