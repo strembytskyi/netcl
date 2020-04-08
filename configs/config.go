@@ -30,6 +30,20 @@ func GetNSConfig() NSConfig {
 		Name:  "ns",
 		Short: "Looks up the Name Servers for a Particular Host",
 	}
+	return config
+}
 
+// IPConfig ...
+type IPConfig struct {
+	Name  string
+	Short string
+}
+
+// GetIPConfig ...
+func GetIPConfig() IPConfig {
+	config := IPConfig{
+		Name:  "ip",
+		Short: "Looks up the IP addresses for a particular host",
+	}
 	return config
 }
