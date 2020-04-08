@@ -8,12 +8,12 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var config = configs.GetRootConfig()
+var configRoot = configs.GetRootConfig()
 
 var rootCmd = &cobra.Command{
-	Use:          config.Name,
-	Short:        config.Short,
-	SilenceUsage: config.Silence,
+	Use:          configRoot.Name,
+	Short:        configRoot.Short,
+	SilenceUsage: configRoot.Silence,
 }
 
 // Execute ...
