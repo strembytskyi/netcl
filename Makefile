@@ -1,2 +1,2 @@
 build:
-	go build -o ./netcl -v ./cmd/netcl/
+	go build -o ./netcl -v ./main.go

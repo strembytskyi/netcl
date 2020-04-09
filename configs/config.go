@@ -47,3 +47,19 @@ func GetIPConfig() IPConfig {
 	}
 	return config
 }
+
+// CnameConfig ...
+type CnameConfig struct {
+	Name  string
+	Short string
+}
+
+// GetCnameConfig ...
+func GetCnameConfig() CnameConfig {
+	config := CnameConfig{
+		Name:  "cname",
+		Short: "Looks up he CNAME for a particular host",
+	}
+
+	return config
+}
